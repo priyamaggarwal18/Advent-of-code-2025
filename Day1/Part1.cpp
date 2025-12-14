@@ -23,10 +23,7 @@ int main() {
             while (dial >= 100){
                 dial -= 100;
             }
-        } else {
-            cerr << "Invalid direction in input: " << direction << endl;
-            return 1;
-        }
+        } 
 
         if (dial == 0) {
             countZeroPass++;
@@ -35,7 +32,7 @@ int main() {
 
     inputFile.close();
 
-    cout << "The password to open the door is: " << countZeroPass << endl;
+    cout << countZeroPass << endl;
 
     return 0;
 }

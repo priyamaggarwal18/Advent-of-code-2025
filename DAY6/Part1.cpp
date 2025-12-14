@@ -30,10 +30,10 @@ int main() {
         return 1;
     }
 
-    // The last row is operators
+    //the last row is operators
     int cols = data[rows - 1].size();
 
-    // Ensure all rows have exactly 'cols' columns
+    //ensure all rows have exactly 'cols' columns
     for (int r = 0; r < rows - 1; r++) {
         if ((int)data[r].size() < cols) {
             data[r].resize(cols, "0");

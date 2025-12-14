@@ -20,12 +20,12 @@ int main() {
             int countneighbors=0;
             char current =grid[i][j];
             if(current=='@' ){
-                if(i>0 && grid[i-1][j]=='@') countneighbors++; //up
-                if(i<rows-1 && grid[i+1][j]=='@') countneighbors++; //down
-                if(j>0 && grid[i][j-1]=='@') countneighbors++; //left
-                if(j<cols-1 && grid[i][j+1]=='@') countneighbors++; //right
-                if(i>0 && j>0 && grid[i-1][j-1]=='@') countneighbors++; //up-left
-                if(i>0 && j<cols-1 && grid[i-1][j+1]=='@') countneighbors++; //up-right
+                if(i>0 && grid[i-1][j]=='@') countneighbors++;
+                if(i<rows-1 && grid[i+1][j]=='@') countneighbors++;
+                if(j>0 && grid[i][j-1]=='@') countneighbors++;
+                if(j<cols-1 && grid[i][j+1]=='@') countneighbors++;
+                if(i>0 && j>0 && grid[i-1][j-1]=='@') countneighbors++;
+                if(i>0 && j<cols-1 && grid[i-1][j+1]=='@') countneighbors++;
                 if(i<rows-1 && j>0 && grid[i+1][j-1]=='@') countneighbors++; 
                 if(i<rows-1 && j<cols-1 && grid[i+1][j+1]=='@') countneighbors++; 
                 if(countneighbors<4){
